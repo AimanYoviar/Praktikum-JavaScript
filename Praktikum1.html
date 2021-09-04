@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>LoopingDoWhile</title>
+</head>
+
+    <SCRIPT LANGUAGE="Javascript">
+        function test() {
+            var nilai =document.grading.nilai.value
+            if (nilai => 93){
+                document.grading.Grade.value="A"
+            }else if
+             (nilai => 83){
+                document.grading.Grade.value="B"
+            }else if
+            (nilai => 75){
+                document.grading.Grade.value="C"
+            }else if 
+             (nilai  => 50){
+                document.grading.Grade.value="D"
+            }else if 
+             (nilai <= 49){
+                document.grading.Grade.value="E"
+            }else {
+                document.grading.Grade.value="tidak ada"
+            }
+
+                                    
+        }
+    </SCRIPT>
+
+    <body>
+        <fieldset style="display : inline-block;">
+            <legend>Periksa Nilai</legend>
+            <form method="POST" name="grading">
+            <p>Bilangan <input type="text" name="Nilai" size="5"> <br></p>
+            <p><input type="button" value="TEBAK" name="B1" onclick=test()>
+            <p>Keterangan : <input type="text" name="Grade" size="11"   
+            </p>
+            
+        </form>
+        </fieldset>
+    </body>
+</html>
